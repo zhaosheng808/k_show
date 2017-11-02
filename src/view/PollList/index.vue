@@ -29,11 +29,11 @@
       }
     },
     methods: {
-      rule_show: () => { // 跳转选手列表
+      rule_show () { // 跳转选手列表
         alert('显示规则')
       },
       // 投票
-      vote: (playerId) => {
+      vote (playerId) {
         console.log('player_id', playerId)
       }
     }

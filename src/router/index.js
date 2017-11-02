@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Home from '@/view/Home'
 import PollList from '@/view/PollList'
+import RankList from '@/view/RankList'
+import StageList from '@/view/StageList'
 
 Vue.use(Router)
 
@@ -10,17 +11,22 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: '主页',
+      name: 'home',         // 首页
       component: Home
     },
     {
-      path: '/hello',
-      name: 'Hello',
-      component: HelloWorld
+      path: '/rank',
+      name: 'rank',          // 排行榜
+      component: RankList
+    },
+    {
+      path: '/stageList',
+      name: 'stageList',          // 往期比赛列表
+      component: StageList
     },
     {
       path: '/poll',
-      name: 'poll',
+      name: 'poll',          // 投票列表
       component: PollList
     }
   ]
